@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    background-image: url('imgs/banago.jpg');   
+    background-image: url('banago.jpg');   
      background-repeat: no-repeat; /* Prevent background from repeating */
     background-size: cover; /* Ensure the gradient covers the entire background */
     font-family: 'Open Sans', sans-serif;
