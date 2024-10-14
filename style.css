@@ -1,0 +1,27 @@
+.nav-item{
+
+    margin-left: 20px;
+    margin-right:20px ;
+}
+html, body {
+    height: 100%; /* Set height to 100% for both html and body */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    background-image: url('imgs/banago.jpg');   
+     background-repeat: no-repeat; /* Prevent background from repeating */
+    background-size: cover; /* Ensure the gradient covers the entire background */
+    font-family: 'Open Sans', sans-serif;
+}
+.container-fluid {
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+    padding: 20px; /* Padding around the content */
+    color: black; /* Set text color to white for better visibility */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Add shadow to text for better readability */
+    border-radius: 10px; /* Rounded corners */
+}
+.nav-item:hover{
+    font-weight: bold;
+    color: gold;
+}

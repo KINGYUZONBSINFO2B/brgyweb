@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Banago</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">Barangay Banago</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mx-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 px-5">
+        <h1>Welcome to Barangay Banago</h1>
+        <p>Barangay Banago is committed to serving its citizens with dedication and care. Explore our services and learn more about what we offer.</p>
+        <button class="btn btn-outline-primary" id="newsletterBtn">Subscribe to Newsletter</button>
+    </div>
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsletterModalLabel">Subscribe to Our Newsletter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS to Show Modal After 5 Seconds -->
+    <script>
+     // Wait for the DOM to load completely
+    document.addEventListener('DOMContentLoaded', function () {
+        // Automatically show the modal after 5 seconds
+        setTimeout(function () {
+            var newsletterModal = new bootstrap.Modal(document.getElementById('newsletterModal'), {
+                keyboard: false
+            });
+            newsletterModal.show();
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+        // Add event listener to the subscribe button (if exists)
+        const sbcbtn = document.getElementById('newsletterBtn');
+        if (sbcbtn) {
+            sbcbtn.addEventListener('click', function () {
+                var newsletterModal = new bootstrap.Modal(document.getElementById('newsletterModal'), {
+                    keyboard: false
+                });
+                newsletterModal.show(); // Show the modal when button is clicked
+            });
+        }
+    });
+ 
+    </script> 
+    </body>
+    </html>
+    
+
