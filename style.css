@@ -9,19 +9,102 @@ html, body {
 }
 
 body {
-    background-image: url('banago.jpg');   
-     background-repeat: no-repeat; /* Prevent background from repeating */
-    background-size: cover; /* Ensure the gradient covers the entire background */
+    background-image: url('imgs/banago.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed in place */
+    background-position: center; /* Centers the background image */
     font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 0;
+    min-height: 100vh; /* Ensures it covers at least the viewport height */
 }
+
 .container-fluid {
-    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
-    padding: 20px; /* Padding around the content */
-    color: black; /* Set text color to white for better visibility */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Add shadow to text for better readability */
-    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px; 
+    color: black; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
 }
 .nav-item:hover{
     font-weight: bold;
     color: gold;
+}
+/* Hero section with background */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('your-background-image.jpg') center center / cover no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh; /* Ensures it fills at least the viewport height */
+    width: 100%;
+    padding: 100px 20px; /* Adjust padding to your needs */
+    box-sizing: border-box;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Navbar styling */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Button styling */
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Modal styling */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-body .form-label {
+    font-weight: 500;
+}
+
+/* Additional utility classes */
+.mt-5 {
+    margin-top: 3rem;
 }
